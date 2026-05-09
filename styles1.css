@@ -1,0 +1,137 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+  width: 100vw;
+  z-index: 1000;
+}
+
+ul li a {
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #FF0000;
+  color: #000000;
+}
+
+.navbar{
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 18%; 
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    color: #000000;
+}
+
+span{
+  background-color: #FF0000;
+  border-radius: 5px;
+  padding: 5px;
+  display: inline-block;
+}
+footer{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+.bottombar{
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+body{
+    background-color: #808080;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.content{
+    margin-top: 35px;
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+h2{
+    margin-top: 35px;
+    margin-left: 50px;
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+.image{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 15px;
+  margin-top: -300px;
+}
+
+@media screen and (max-width: 800px){
+  .navbar{
+    float: none;
+    padding: 12px 0;
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+    width: 100%; 
+    text-align: center;
+  }
+
+  ul{
+    width: 100%;
+  }
+
+  h1 span{
+    font-size: 20px;
+    padding: 5px;
+    display: inline-block;
+  }
+
+  h2{
+    margin-left: 15px;
+    font-size: 28px;
+  }
+
+  .content{
+    margin-left: 15px;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  .image{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  .bottombar{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+}
