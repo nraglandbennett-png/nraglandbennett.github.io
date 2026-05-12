@@ -1,9 +1,65 @@
+.wrapper1 {
+
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-areas: 
+        "Header  Header  Header"
+        "navbar navbar  navbar"
+        "...  content1 ..."
+        "...  image1  ..."
+        "bottombar  bottombar bottombar";
+}
+
+.Header {
+
+  grid-area: Header;
+}
+
+.content {
+
+  grid-area: content1;
+  font-size: 20px;
+  margin-bottom: 10px;
+  background-color: #FF0000;
+  border-radius: 8px;
+}
+
+.image1 {
+
+  grid-area: image1;
+}
+
+.navbar{
+    grid-area: navbar;
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 18%; 
+    text-align: center;
+}
+
+.bottombar {
+
+  grid-area: bottombar;
+  overflow: hidden;
+  width: 100%;
+  list-style-type: none;
+  background-color: #333333;
+  display: block;
+  color: white;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333333;
+  background-color: #e1dbdb;
   width: 100vw;
   z-index: 1000;
 }
@@ -21,16 +77,6 @@ ul li a:hover {
   color: #000000;
 }
 
-.navbar{
-    float: left;
-    padding: 12px;
-    color: white;
-    text-decoration: none;
-    font-size: 17px;
-    width: 18%; 
-    text-align: center;
-}
-
 h1{
     text-align: center;
     color: #000000;
@@ -42,53 +88,19 @@ span{
   padding: 5px;
   display: inline-block;
 }
-footer{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333333;
-    display: block;
-    color: white;
-    text-align: left;
-    padding: 14px 16px;
-    text-decoration: none;
-    
-}
-
-.bottombar{
-    background-color: #333;
-    overflow: hidden;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
 
 body{
     background-color: #808080;
+    text-align: left;
+    overflow-x: hidden;
+    overflow-y: scroll;
     margin: 0;
     padding: 0;
-    text-align: left;
-}
-
-.content{
-    margin-top: 35px;
-    margin-left: 50px;
-    font-size: 25px;
 }
 
 h2{
-    margin-top: 35px;
-    margin-left: 50px;
     font-size: 35px;
     text-decoration: underline;
-}
-
-.image{
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 15px;
-  margin-top: -300px;
 }
 
 @media screen and (max-width: 800px){
